@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav li {
+    height: 50px;
+    padding-top: 7px;
+}
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    text-align: center;
+    color: black;
+}
+nav li:first-child{
+    margin-right: auto;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgb(238, 235, 235);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+ 
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+    color: black;
+}
+
+@media (max-width: 800px) {
+     .hideOnMobile{
+        display: none;
+     }
+}
+.LOGO{
+    width: 30px;
+    height: 30px;
+}
+@media (max-width: 150px){
+    .LOGO{
+        width: 20px;
+        height: 20px;
+    }
+}
+.organization-logo{
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    background-color: #fff;
+    color: #000000;
+    padding: px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .footer-links {
+    order: 3;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .footer-links li:first-child {
+    margin-left: 0;
+  }
+
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-links li {
+    margin-left: 20px;
+  }
+  
+  .footer-links a {
+    color: #29008a;
+    text-decoration: none;
+  }
+  
+@media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .organization-logo{
+        width: 70px;
+        height: 70px;
+    }
+    
+
+    .footer-logo {
+      margin-top: 20px;
+    }
+    
+    .footer-links {
+      text-align: center;
+    }
+    
+    .footer-links li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+
+@media (max-width: 480px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .organization-logo{
+        width: 70px;
+        height: 70px;
+    }
+    
+
+    .footer-logo {
+      margin-bottom: 20px;
+    }
+    
+    .footer-links {
+      text-align: center;
+    }
+    
+    .footer-links li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+
+  
+@media  screen and (max-width: 294px) {
+    .footer-links {
+      justify-content: center;
+    }
+  
+    .footer-links ul {
+      flex-direction: column;
+    }
+  
+    .footer-links li {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+}
+
+.content {
+  display: block;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(245, 240, 240);
+}
+
+.dairy {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.card22 {
+  font-size: 23px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card22 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card22 {
+    font-size: 14px;
+  }
+}
+
+.border {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #e7e7e7;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.border:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .border {
+    width: 80%;
+    height: 400px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .border {
+    width: 50%;
+    height: 600px;
+  }
+}
+
+
+.dairy {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.footer-links {
+  order: 3;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-links li:first-child {
+  margin-left: 0;
+}
+
+.caption{
+  width: 120px;
+  height: 30px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: px;
+}
+.caption:hover{
+  background-color: black;
+  color: white;
+}
+
